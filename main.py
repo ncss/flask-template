@@ -12,15 +12,15 @@ def hello_world():
     return "Hello, World!"
 
 
-@app.post('/echo')
-def echo_bot():
+@app.post('/bogan')
+def bogan():
     message = request.json
     print(f"\nIncoming message to {request.path}:")
     pprint.pprint(message, indent=2)
 
     message_text = message['text']
     return {
-        'author': 'EchoBot',
+        'author': 'BoganBot',
         'text': f"Hello! Your message was: {message_text}"
     }
 
