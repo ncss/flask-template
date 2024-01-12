@@ -1,3 +1,7 @@
 Flask==2.3.2
 flask-cors
 requests
+langchain_core
+langchain_community
+langchain
+dot_env
